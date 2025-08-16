@@ -1,0 +1,80 @@
+.name-me {
+    color: #4f2d2d;
+    font-size: 40px;
+    text-align: center;
+}
+
+.email-link {
+    color: black;
+}
+
+h3 {
+    color: #4f2d2d;
+    font-size: x-large;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.highlight {
+    display: block;
+    color: #8c4343;
+    font-size: larger;
+    text-align: center;
+}
+
+.color {
+    display: block;
+    color: #422525;
+    font-size: larger;
+    text-align: center;
+}
+
+.contact-row {
+    margin: 5px 0;
+}
+
+h1 {
+    color: #4f2d2d;
+}
+
+.name-list {
+    color: #8c4343;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+ul ul li {
+    font-size: 15px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+ul>li {
+    font-size: 15px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.color-changer {
+    color: #8c4343;
+    font-size: 15px;
+}
+
+h2 {
+    color: #8c4343;
+    font-size: 20px;
+}
+
+p {
+    color: #8c4343;
+}
+
+.name-list2 {
+    text-decoration: underline;
+    font-size: 20px;
+}
