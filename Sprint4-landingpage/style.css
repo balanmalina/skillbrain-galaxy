@@ -207,7 +207,7 @@ body>section:last-child {
 
 .content-left-col,
 .content-right-col {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,12 +329,7 @@ body,
 html {
     overflow-x: hidden;
     overflow-y: auto;
-
 }
-
-
-
-
 
 
 @media (max-width:1024px) {
@@ -380,7 +375,7 @@ html {
 
     @media (max-width:768px) {
         .row {
-            flex-direction: column;
+            /* flex-direction: column; */
             align-items: center;
         }
 
@@ -464,3 +459,4 @@ html {
             height: auto;
         }
     }
+}

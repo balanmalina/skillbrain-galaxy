@@ -28,7 +28,7 @@ Pentru a renunta la modificari active, se poate scrie comanda: "git stash"
 // Incepem lucru: cream un dosar nou "sprint7" si punem acolo toate fisierele necesare
 // Cand terminal lucru:
 6.	git add .
-7.git commit -m "Add readme.md"
+7.git commit -m Add readme.md"
 8.git push origin sprint7
 9.[se creeaza un PR - Pull Request]
 10.[se creeaza un ticket pe notion cu linkul la PR]
