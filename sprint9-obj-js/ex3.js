@@ -21,3 +21,4 @@ for (let i = 0; i < carti.length; i++) {
         console.log("Trebuie să citești \"" + carte.titlu + "\" de " + carte.autor);
     }
 }
+

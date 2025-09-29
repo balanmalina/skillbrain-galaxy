@@ -8,7 +8,7 @@ function myRecipe(titlu, portii, ingrediente) {
     const recipe = {
         titlu: titlu,
         portii: portii,
-        ingrediente: ingrediente
+        ingrediente: [...ingrediente]
     };
 
     return recipe;
@@ -19,16 +19,5 @@ const myArray = Object.values(recipe);
 console.log(myArray);
 
 
-function myRecipe(titlu, portii, ingrediente) {
-    const recipe = {
-        titlu: titlu,
-        portii: portii,
-        ingrediente: ingrediente
-    };
 
-    return recipe;
-}
-
-const recipe = myRecipe("Pizza", 10, ["rosii", "spanac", "ceapa", "carne"]);
-console.log(JSON.stringify(recipe));
 
