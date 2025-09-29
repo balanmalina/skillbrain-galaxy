@@ -18,3 +18,4 @@ function numaraVocale(text) {
 
 let sir = "string de test";
 console.log("Numărul de vocale este: " + numaraVocale(sir));
+
