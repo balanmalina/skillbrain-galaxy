@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #e2d2df;
+    color: #6B6666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.app-class {
+    background-color: #d3bcbc;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    max-width: 820px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0.3);
+    height: 280px;
+}
+
+#button-app {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f7f5f6;
+}
+
+.paragraf-app {
+    color: black;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.titlu-app {
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+
+@media (max-width:670px) {
+    .app-class {
+        height: 380px;
+    }
+
+    .paragraf-app {
+        font-size: 23px;
+    }
+}
+
+@media (max-width:448px) {
+    #button-app {
+        top: 70%;
+    }
+
+    .paragraf-app {
+        font-size: 20px;
+    }
+}
