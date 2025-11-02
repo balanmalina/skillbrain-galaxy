@@ -1,0 +1,302 @@
+body {
+    position: relative;
+    background-image: url('./assets/home/background-home-desktop.jpg');
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#img-navbar {
+    margin-top: 35px;
+    width: 48px;
+    height: 48px;
+    margin-left: 55px;
+}
+
+.line {
+    position: absolute;
+    top: 60px;
+    left: 220px;
+    width: 500px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 21px 120px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 1;
+}
+
+.nav-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-button:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-number {
+    font-weight: bold;
+    margin-right: 8px;
+    color: white;
+}
+
+.content-space {
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#first-title {
+    font-weight: 400;
+    font-size: 28px;
+    color: #D0D6F9;
+}
+
+#second-title {
+    font-size: 150px;
+    margin: 20px 0;
+    color: white;
+}
+
+#paragraph-content {
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    letter-spacing: 0px;
+}
+
+.button-explore {
+    position: absolute;
+    right: 12%;
+    bottom: 15%;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: white;
+    color: #0B0D17;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+/* ========== TABLETĂ ========== */
+@media (max-width: 1120px) {
+    body {
+        background-image: url('./assets/home/background-home-tablet.jpg');
+    }
+
+    /* LOGO + NAVBAR */
+    #img-navbar {
+        margin-top: 25px;
+        margin-left: 40px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        /* ca să nu se suprapună peste logo */
+        margin-top: 30px;
+        /* spațiu între logo și meniu */
+        justify-content: center;
+        padding: 14px 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-button {
+        font-size: 13px;
+        margin-left: 25px;
+    }
+
+    /* TEXT + CONȚINUT */
+    .content-space {
+        position: static;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #first-title {
+        font-size: 22px;
+    }
+
+    #second-title {
+        font-size: 110px;
+    }
+
+    #paragraph-content {
+        font-size: 16px;
+        max-width: 85%;
+        margin: 0 auto;
+        line-height: 30px;
+    }
+
+    /* BUTON EXPLORE */
+    .button-explore {
+        position: static;
+        display: block;
+        margin: 100px auto 0 auto;
+        width: 180px;
+        height: 180px;
+        font-size: 26px;
+    }
+}
+
+/* ========== MOBIL ========== */
+@media (max-width: 767px) {
+    body {
+        background-image: url('./assets/home/background-home-mobile.jpg');
+    }
+
+    #img-navbar {
+        margin: 20px auto;
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar {
+        position: relative;
+        margin-top: 10px;
+        padding: 10px 0;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(8px);
+    }
+
+    .nav-button {
+        font-size: 10px;
+        margin: 0 10px;
+    }
+
+    .content-space {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    #first-title {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    #second-title {
+        font-size: 70px;
+        margin: 10px 0;
+    }
+
+    #paragraph-content {
+        font-size: 14px;
+        line-height: 26px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .button-explore {
+        width: 150px;
+        height: 150px;
+        font-size: 22px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: url('./assets/home/background-home-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100vh;
+        /* folosește vh, nu d vh */
+        overflow-x: hidden;
+        /* elimină marginea laterală */
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .content-space {
+        margin-top: 60px;
+    }
+
+    .button-explore {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 280px) {
+    body {
+        overflow-x: hidden;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 4px;
+        padding: 6px 0;
+    }
+
+    .nav-button {
+        font-size: 9px;
+        margin: 2px 0;
+    }
+
+    #first-title {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    #second-title {
+        font-size: 48px;
+    }
+
+    #paragraph-content {
+        font-size: 12px;
+        line-height: 22px;
+        max-width: 95%;
+    }
+
+    .button-explore {
+        width: 120px;
+        height: 120px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+}
