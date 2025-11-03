@@ -44,7 +44,7 @@ function afiseazaMasini() {
     const masina1 = new MasinaDeCurse("Toyota", "Turbo", "Rosu", 100000);
     const masina2 = new MasinaDeCurse("Ferrari", "F1", "Negru", 50000);
 
-    masina1.participaLaCampionat(2);
+    masina1.participaLaCampionat();
     console.log(masina1.proprietati);
 
     console.log("");
