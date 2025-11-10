@@ -10,7 +10,7 @@ function TaskCard(props) {
         <Badge status={props.status} />
       </div>
       <div className="card-content">
-        <p>{props.name} testss</p>
+        <p>{props.name}</p>
       </div>
       <div className="card-footer">
         <DateContainer date={props.dueDate} />
